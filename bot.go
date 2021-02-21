@@ -20,7 +20,7 @@ func main() {
 	// Parse config values.
 	// Default value needs removing for production.
 	var token string
-	flag.StringVar(&token, "Bot Token", "", "Authentication token to commuincate with bot")
+	flag.StringVar(&token, "Token", "", "Authentication token to commuincate with bot")
 	flag.Parse()
 	if token == "" {
 		log.Fatal("Must provide an auth token")
